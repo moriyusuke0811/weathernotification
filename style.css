@@ -2,7 +2,7 @@ html{
     font-family: Arial;
   }
 #logoletter{
-
+    font-size: 20px;
 }
   header {
       position: fixed;
