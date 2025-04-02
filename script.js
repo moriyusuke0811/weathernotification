@@ -32,4 +32,5 @@ nextButton.addEventListener("click", () => {
     }
 });
 
+
 showQuestion();
