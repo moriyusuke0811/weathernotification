@@ -31,14 +31,14 @@ body {
   padding: 8px 15px;
   font-size: 16px;
   cursor: pointer;
-  border: 1px solid #007bff;
+  border: 1px solid #6d6d6d;
   background-color: white;
-  color: #007bff;
+  color: #8e8e8e;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 .option:hover {
-  background-color: #007bff;
+  background-color: #3f3f3f;
   color: white;
 }
 .btn {
