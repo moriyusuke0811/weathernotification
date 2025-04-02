@@ -1,17 +1,27 @@
 const questions = [
-    "今日の体調は？",
-    "今日の痛みはどれくらい？",
-    "どんな痛み？"
+    { text: "今日の体調は？", options: ["元気！", "だるい", "頭痛がする", "悪い","その他"] },
+    { text: "今日の痛みはどれくらい？", options: ["1", "2", "3", "4","5"] },
+    { text: "どんな痛み？", options: ["ズキズキ", "ガンガン", "ギュー", "〇〇","△△"] },
 ];
-let index = 0;
+
 const questionContainer = document.getElementById("question-container");
+const optionsContainer = document.getElementById("options-container");
 const nextButton = document.getElementById("next-btn");
 
 function showQuestion() {
     questionContainer.style.transform = "translateX(100%)";
+    optionsContainer.style.opacity = "0";
     setTimeout(() => {
-        questionContainer.textContent = questions[index];
+        questionContainer.textContent = questions[index].text;
+        optionsContainer.innerHTML = "";
+        questions[index].options.forEach(option => {
+            const btn = document.createElement("button");
+            btn.textContent = option;
+            btn.classList.add("option");
+            optionsContainer.appendChild(btn);
+        });
         questionContainer.style.transform = "translateX(0)";
+        optionsContainer.style.opacity = "1";
     }, 300);
 }
 
