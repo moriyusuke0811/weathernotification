@@ -1,7 +1,7 @@
 const questions = [
-    "あなたの好きな色は？",
-    "あなたの趣味は？",
-    "一番行きたい国は？"
+    "今日の体調は？"
+    "今日の痛みはどれくらい？"
+    "どんな痛み？"
 ];
 let index = 0;
 const questionContainer = document.getElementById("question-container");
