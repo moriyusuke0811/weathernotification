@@ -27,6 +27,7 @@ body {
 .container {
   position: relative;
   width: 300px;
+  height: 700px;
   padding: 20px;
   background: white;
   border-radius: 10px;
